@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="topbar">
+        <h1>FactoryVision Dashboard</h1>
+        <span>
+            <a><img src="./icons/help-w.png" title="Help" alt="Help" /></a>
+            <a><img src="./icons/settings-w.png" title="Settings" alt="Settings" /></a>
+        </span>
+    </div>
+    <div id="mainContent">
+        <div style="width: 25%;display: table-cell; background: #333333;">
+            <h2 class="text-center text-white">
+                Employees' List
+            </h2>
+            <ul id="empList">
+
+            </ul>
+        </div>
+        <div style="width: 25%;display: table-cell; background: #777777;">
+            <h2 class="text-center text-white">Select date</h2>
+            <div id="datepicker"></div>
+        </div>
+        <div id="empInfo" class="text-center" style="width: 50%;display: table-cell;">
+            <h2 class="text-center">
+                Showing Productivity on: <strong class="font-bold" id="selectedDate"></strong>
+                <!-- <a><img style="height: 1.5rem;
+                margin-bottom: -3px;" src="./icons/calendar.png" alt="Calendar" /></a> -->
+            </h2>
+            <h3 class="impSection" id="empProductivity"></h3> <strong>=</strong> <h3 id="empProductivityPercent" class="impSection"></h3>
+            <div id="chartContainer" style="height: 60vh; "></div>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+    <script src="main.js"></script>
+    <!-- <div onclick="closeModal()" id="modal">
+        <img src="" alt="">
+    </div> -->
+</body>
+
+</html>
